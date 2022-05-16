@@ -1,0 +1,4 @@
+7c7
+< outer_level.append(inner_level, [0,1])
+---
+> outer_level.append(inner_level.to_gate(), [0,1])

@@ -1,0 +1,5 @@
+4c4,5
+< print(qc.decompose())
+---
+> transpile(qc, basis_gates=['u1', 'u2', 'u3', 'cx'])
+> print(qc)

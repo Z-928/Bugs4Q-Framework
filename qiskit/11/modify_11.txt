@@ -1,0 +1,4 @@
+6c6
+< circuit.assign_parameters({x: 0.001}, inplace=True)
+---
+> bound_circuit = circuit.assign_parameters({x: 0.001}, inplace=False)

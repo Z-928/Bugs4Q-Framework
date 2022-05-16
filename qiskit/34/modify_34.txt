@@ -1,0 +1,4 @@
+5c5
+< sv = Statevector.from_label('01')
+---
+> sv = Statevector.from_label('10')

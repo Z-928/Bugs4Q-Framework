@@ -1,0 +1,4 @@
+3c3
+< zz.draw("mpl")
+---
+> zz.decompose().draw("mpl")

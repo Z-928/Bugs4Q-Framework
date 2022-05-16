@@ -1,0 +1,6 @@
+8,9c8,9
+<     pulse.ShiftPhase(phase, pulse.drive_channel(0))
+< 
+---
+>     pulse.shift_phase(phase, pulse.drive_channel(0))
+>     

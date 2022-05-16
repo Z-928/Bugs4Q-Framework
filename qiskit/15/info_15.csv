@@ -1,0 +1,2 @@
+BugID;Url;Bug-Type;Mod
+15;https://github.com/Qiskit/qiskit-terra/issues/7032;Throw Exceptions;modify_15.txt

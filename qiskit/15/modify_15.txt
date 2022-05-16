@@ -1,0 +1,4 @@
+6c6
+< ansatz = RealAmplitudes(num_qubits=1, reps=1)
+---
+> ansatz = RealAmplitudes(num_qubits=1, reps=1).decompose()

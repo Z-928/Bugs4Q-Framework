@@ -1,0 +1,4 @@
+61c61
+< qc = quantum_circuit(target_time=0.0, num_qubits=2, initial_state='10')
+---
+> qc = quantum_circuit(target_time=0.0, num_qubits=2, initial_state=[0, 0, 1, 0])

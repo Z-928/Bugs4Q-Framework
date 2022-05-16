@@ -1,0 +1,35 @@
+23d22
+<     circuit.x( search_register[2] )
+25c24
+<     # Encode S0 * S1
+---
+> # Encode S0 * S1
+28c27
+<     # Encode oracle ((S0 * S1) + (S1 * !S2 * S3))
+---
+> # Encode oracle ((S0 * S1) + (S1 * !S2 * S3))
+31d29
+<     circuit.x(ancillaries)
+34,35c32,37
+<     # Reset ancillaries to be used later
+<     circuit.reset(ancillaries)
+---
+> # Return ancillaries to 0s so they can be used later
+>     circuit.x(ancillaries)
+>     circuit.ccx( search_register[0], search_register[1], ancillaries[2] )
+>     circuit.ccx( search_register[3], ancillaries[0], ancillaries[1] )
+>     circuit.ccx( search_register[1], search_register[2], ancillaries[0] )
+>     circuit.x( search_register[2] )
+37c39
+<     # Do rotation about the average
+---
+> # Do rotation about the average
+44a47,50
+> 
+> # Return ancillaries to 0s for use later
+>     circuit.ccx( search_register[2], ancillaries[0], ancillaries[1] )
+>     circuit.ccx( search_register[0], search_register[1], ancillaries[0] )
+47c53
+<     # Reset ancillaries for use later
+---
+> # Reset ancillaries for use later

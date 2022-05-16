@@ -1,0 +1,6 @@
+61,62c61,62
+<     n0 = n0 + result.get_data("solve_linear_sys")['counts']['1000']
+<     n1 = n1 + result.get_data("solve_linear_sys")['counts']['1100']
+---
+>     n0 = n0 + result.get_counts()['1000']
+>     n1 = n1 + result.get_counts()['1100']

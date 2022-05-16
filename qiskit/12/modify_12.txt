@@ -1,0 +1,4 @@
+6c6
+< qc.measure_all()
+---
+> qc.measure(qc.qubits, qc.clbits)

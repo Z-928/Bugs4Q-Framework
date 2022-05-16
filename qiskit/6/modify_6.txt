@@ -1,0 +1,6 @@
+1a2
+> from qiskit.providers.aer import AerSimulator
+14c15
+< backend_sim = Aer.get_backend('qasm_simulator')
+---
+> backend_sim = AerSimulator(method='matrix_product_state')

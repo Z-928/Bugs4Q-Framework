@@ -1,0 +1,6 @@
+30,31c30,31
+<                                        node.qargs[node.op.num_ctrl_qubits:],
+<                                        node.op.params)
+---
+>                                qr[node.op.num_ctrl_qubits:],
+>                                node.op.params)

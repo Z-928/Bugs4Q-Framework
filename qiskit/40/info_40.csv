@@ -1,0 +1,2 @@
+BugID;Url;Bug-Type;Mod
+40;https://quantumcomputing.stackexchange.com/questions/17651/setting-initial-state-in-qiskit-unitary-simulator;Throw Exceptions;modify_40.txt

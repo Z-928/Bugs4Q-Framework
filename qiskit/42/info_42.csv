@@ -1,0 +1,2 @@
+BugID;Url;Bug-Type;Mod
+42;https://quantumcomputing.stackexchange.com/questions/9195/attributeerror-result-object-has-no-attribute-get-data;Throw Exceptions;modify_42.txt

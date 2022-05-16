@@ -1,0 +1,4 @@
+4c4
+< layout = {qreg[0]: 12, 
+---
+> layout = {qreg[0]: 10, 

@@ -1,0 +1,11 @@
+6c6
+< circuit = QuantumCircuit(qr, cr)
+---
+> qc = QuantumCircuit(qr, cr)
+8,9c8,10
+< circuit.draw(output='mpl')
+< circuit.h(qr(0))
+---
+> qc.draw(output='mpl')
+> qc.h(0)
+> qc.draw(output='mpl')

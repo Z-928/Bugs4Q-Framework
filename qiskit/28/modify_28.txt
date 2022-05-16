@@ -1,0 +1,4 @@
+4c4
+< circuit.iden(0)
+---
+> circuit.id(0)

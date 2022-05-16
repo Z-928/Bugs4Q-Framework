@@ -1,0 +1,9 @@
+19c19,20
+< tomo = ProcessTomography(
+---
+> # or       tomo = ProcessTomography(circuit=circ)
+> tomo = ProcessTomography(                   
+23c24
+<     preparation_basis=PauliMeasurementBasis(),
+---
+>     preparation_basis=PauliPreparationBasis(),

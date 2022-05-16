@@ -1,0 +1,2 @@
+13d12
+< ghz.measure(qr,cr)

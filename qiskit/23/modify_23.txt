@@ -1,0 +1,5 @@
+9,10c9
+< print(Qc.draw(output = 'mpl'))
+< print ('')
+---
+> Qc.draw('mpl').show()

@@ -1,0 +1,9 @@
+3a4,5
+> for i in range(4):
+>     qc.h(i)
+17c19
+< plot_histogram(count) 
+\ No newline at end of file
+---
+> plot_histogram(count)
+\ No newline at end of file

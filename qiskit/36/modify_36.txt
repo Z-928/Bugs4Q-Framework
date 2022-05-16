@@ -1,0 +1,12 @@
+2,3c2,3
+< from qiskit.extensions.standard import RXGate, RYGate, RZGate, U3Gate
+< from qiskit.extensions.simulator import wait
+---
+> from qiskit import *
+> 
+12c12,14
+< circuit.wait(1e-6, qubit)
+---
+> circuit.barrier(qubit)
+> circuit.id(qubit)
+> circuit.barrier(qubit)

@@ -1,0 +1,2 @@
+BugID;Url;Bug-Type;Mod
+38;https://quantumcomputing.stackexchange.com/questions/20894/saving-statevector-on-more-than-one-location-in-a-quantum-circuit-in-qiskit;Throw Exceptions;modify_38.txt

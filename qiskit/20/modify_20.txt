@@ -1,0 +1,4 @@
+13c13
+< job_1 = qk.execute([test_Z,test_X],backend='my_backend',shots=1000)
+---
+> job_1 = qk.execute([test_Z,test_X],backend=my_backend,shots=1000)

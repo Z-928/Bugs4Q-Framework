@@ -1,0 +1,41 @@
+3,7c3
+< #Creating a quantum circuit with two qubits
+< qc=QuantumCircuit(2)
+< 
+< #Set the state of the first qubit to|0⟩ and set the state of the second qubit to|1⟩.
+< qc.initialize(0,0)
+---
+> qc = QuantumCircuit(2)
+9,12c5
+< #or
+< #qc.reset(0)
+< #qc.reset(1)
+< #qc.x(1)
+---
+> qc.initialize(1,1)
+14d6
+< #Applying Hadamard to both qubits
+17,19d8
+< 
+< 
+< #Applying CNOT operator, where the controller qubit is the first qubit and the target qubit is the second qubit
+21,22d9
+< 
+< #Applying Hadamard to both qubits
+26c13
+< #display(qc.draw()) 
+---
+> qc.draw('mpl') 
+28c15,17
+< qobj = assemble(qc)
+---
+> transpiled = transpile(qc, backend=usim)
+> transpiled.draw('mpl')
+> qobj = assemble(transpiled)
+30c19,20
+< array_to_latex(unitary, pretext="\\text{Circuit = }\n")
+\ No newline at end of file
+---
+> from qiskit.visualization import array_to_latex
+> array_to_latex(unitary, prefix="\\text{Circuit = }\n")
+\ No newline at end of file

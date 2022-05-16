@@ -1,0 +1,4 @@
+6c6
+< circuit.h(1)
+---
+> circuit.x(1)

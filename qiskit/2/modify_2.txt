@@ -1,0 +1,15 @@
+11,16c9,15
+< sample_Total,training_input,test_input,class_labels = ad_hoc_data(training_size=training_dataset_size,
+<                                                                test_size=testing_dataset_size,
+<                                                                gap=0.3,
+<                                                                n=feature_dim,
+<                                                                plot_data=True)
+< 
+---
+> train_features, train_labels, test_features, test_labels, adhoc_total = ad_hoc_data(
+>     training_size=training_dataset_size,
+>     test_size=testing_dataset_size,
+>     n=feature_dim,
+>     gap=0.3,
+>     plot_data=True, one_hot=False, include_sample_total=True
+> )

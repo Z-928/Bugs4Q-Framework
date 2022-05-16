@@ -1,0 +1,8 @@
+11,14c10,11
+< qi.Operator.from_label('HI')
+< 
+< # error at this line
+< qi.Operator.from_label('CX')
+---
+> qi.Operator.from_label('H') 
+> qi.Operator.from_label('X')

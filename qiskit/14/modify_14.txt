@@ -1,0 +1,11 @@
+5c5
+< 
+---
+> from qiskit.opflow.expectations import PauliExpectation
+16a16
+> exp_val = PauliExpectation().convert(exp_val).reduce()
+21,22c21
+< print('Qasm ', CircuitSampler(QuantumInstance(Aer.get_backend('qasm_simulator'),
+<                                shots=100000)).convert(exp_val).eval())  # = 0 (up to shot noise)
+---
+> print('Qasm ', CircuitSampler(QuantumInstance(Aer.get_backend('qasm_simulator'), shots=100000)).convert(PauliExpectation().convert(exp_val).reduce()).eval()) 
