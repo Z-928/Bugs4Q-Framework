@@ -81,6 +81,6 @@ Each bug has the following properties:
 
 
 
-### Publications
+
 
 
