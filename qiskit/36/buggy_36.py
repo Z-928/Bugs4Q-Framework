@@ -1,6 +1,8 @@
-from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
-from qiskit.extensions.standard import RXGate, RYGate, RZGate, U3Gate
-from qiskit.extensions.simulator import wait
+#from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit
+#from qiskit.extensions.standard import RXGate, RYGate, RZGate, U3Gate
+#from qiskit.extensions.simulator import wait
+from qiskit.extensions.simulator import *
+from qiskit import *
 
 
 from qiskit import execute, BasicAer, Aer
